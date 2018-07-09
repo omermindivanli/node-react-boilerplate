@@ -1,0 +1,29 @@
+{
+  "name": "shoppingmernapp",
+  "version": "1.0.0",
+  "description": "example node, react app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "client:install": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express"
+  ],
+  "author": "omermindivanli and bradtraversy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.2",
+    "nodemon": "^1.17.5",
+    "path": "^0.12.7"
+  }
+}
